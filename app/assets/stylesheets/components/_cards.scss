@@ -4,9 +4,6 @@
   grid-gap: 16px;
 }
 
-.card{
-  width: 350px;
-}
 
 .card-category {
   background-size: cover;
@@ -51,21 +48,6 @@
   }
 }
 
-.card-tags {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  width: 80%;
-  span {
-    background: $blue;
-    font-size: .7em;
-    padding: 2px 4px;
-    border-radius: 3px;
-  }
-  a {
-    color: white;
-  }
-}
 
 
 @mixin media() {
@@ -81,11 +63,6 @@ line-height: 1.3;
 font-size: 16px;
 }
 
-.films{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-}
 
 .siteTitle {
 display: block;
@@ -98,7 +75,7 @@ margin: 20px 0;
 }
 }
 
-.image{
-  height: 300px;
-  width: 100%;
-}
+// .image{
+//   height: 300px;
+//   width: 100%;
+// }

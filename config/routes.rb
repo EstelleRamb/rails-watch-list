@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root to: "lists#index"
 
  resources :lists, only: %i[create show new] do
-  resources :bookmarks, only: %i[create new]
+  resources :bookmarks, only: %i[create new show]
  end
  resources :bookmarks, only: %i[destroy]
 
