@@ -11,7 +11,7 @@
           <p class="overview"><%= bookmark.movie.overview %></p>
           <span class="position-absolute bottom-0 start-0"><%= bookmark.comment %></span>
           <div>
-            <a><%= link_to 'X', bookmark_path(bookmark),method: :delete, class:"delete btn btn-dark position-absolute bottom-0 end-0"%></a>
+            <a><%= link_to 'X', bookmark_path(bookmark),data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class:"delete btn btn-dark position-absolute bottom-0 end-0"%></a>
           </div>
         </div>
       </div>
