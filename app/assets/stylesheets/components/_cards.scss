@@ -1,8 +1,11 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 5px;
   border-radius: 5px;
+  margin-left: 59px;
+  margin-right: 59px;
+  margin-top: 20px;
 }
 
 
@@ -30,9 +33,8 @@
 }
 
 .card-remove-link {
-  color: white;
+  color: #C7EFCF;
   border-radius: 50%;
-  border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
