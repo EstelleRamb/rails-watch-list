@@ -6,11 +6,12 @@
       <img src="<%= bookmark.movie.poster_url %>" class="films-category" alt="...">
       <div class="p-3">
        <h5><%= bookmark.movie.title %></h5>
+       <p>(<%= bookmark.movie.year %>) <%= bookmark.movie.director %></p>
        <p><%= bookmark.movie.overview %></p>
        <p>Rating <%= bookmark.movie.rating %></p>
         <span><%= bookmark.comment %></span>
           <div>
-          <a><%= link_to 'Supprimer', bookmark_path(bookmark),method: :delete, class:"btn btn-dark"%>
+          <a><%= link_to 'X', bookmark_path(bookmark),method: :delete, class:"btn btn-dark"%>
            </a>
           </div>
         </div>
