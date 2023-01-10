@@ -6,15 +6,11 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 List.destroy_all
+Movie.destroy_all
 
-Movie.create(title: "Wonder Woman",
-             overview: "Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s",
-             poster_url: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
-             rating: 6.9,
-             year: 1984,
-             director: "Christopher Nolan")
 
-Movie.create(title: "Titanic",
+
+Movie.create!(title: "Titanic",
              overview: "101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic.",
              poster_url: "https://image.tmdb.org/t/p/original/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
              rating: 7.9,
@@ -58,8 +54,8 @@ Movie.create(title: "Forest Gump",
 
 
 Movie.create(title: "The Swimmers",
-             overview: "Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s",
-             poster_url: "https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg",
+             overview: "From war-torn Syria to the 2016 Rio Olympics, two young sisters embark on a risky voyage, putting their hearts and their swimming skills to heroic use.",
+             poster_url: "https://www.themoviedb.org/t/p/original/2LSh1aWqk7z7dJk6dKNK2HNplSl.jpg",
              rating: 6.9,
              year: 2022,
              director: "Sally El Hosaini")
@@ -128,7 +124,7 @@ Movie.create(title: "Requiem for a Dream ",
              director:"Darren Aronofsky")
 
 Movie.create(title: "Bohemian Rhapsody",
-             overview: "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
+             overview: "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. ",
              poster_url: "https://www.themoviedb.org/t/p/original/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
              rating: 8,
              year: 2018,
