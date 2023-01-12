@@ -7,7 +7,12 @@
 </div>
 
 <%# ------------  Display card list -----------%>
-
+<div class="cards">
+  <% @lists.each do |list| %>
+    <div class="card-category m-3 position-relative" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path(list.photo.key) if list.photo.attached? %>)">
+         <a><%= link_to list.name, list %></a>
+    </div>
+  <% end %>
 
 <%# ------------  Button to create a new list -----------%>
   <div class="card-category m-3"
