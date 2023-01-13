@@ -11,7 +11,7 @@
   <% @lists.each do |list| %>
     <div class="card-category m-3 position-relative" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path('list_background.jpg') %>)">
          <a><%= link_to list.name, list %></a>
-         <%# <%= link_to "+", list_path(list), data: { turbo_method: :delete, turbo_confirm: "Delete this category?" }, class: "card-remove-link" %>
+         <%= link_to "+", list_path(list), data: { turbo_method: :delete, turbo_confirm: "Delete this category?" }, class: "card-remove-link" %>
     </div>
   <% end %>
 
